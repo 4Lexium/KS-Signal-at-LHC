@@ -1,0 +1,11 @@
+set auto_convert_model F
+import model mlrsm-1.1/UFOs/mlrsm-4f
+
+define p = u u~ d d~ s s~ c c~ b b~
+define j = u u~ d d~ s s~ c c~ b b~
+define l = e+ e- mu+ mu- ta+ ta-
+
+generate p p > WR+, (WR+ > l+ N1, N1 > l j j)
+add process p p > WR-, (WR- > l- N1, N1 > l j j)
+
+output /storage/alexanum/WORKBENCH/runs/HNL_decay2

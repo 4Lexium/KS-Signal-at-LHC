@@ -1,0 +1,21 @@
+import model EffLRSM_NLO
+import model mlrsm-1.1/UFOs/mlrsm-4f
+
+define p = u u~ d d~ s s~ c c~ b b~
+define j = u u~ d d~ s s~ c c~ b b~
+define l = e+ e- mu+ mu- ta+ ta-
+
+On shell WR:
+generate p p > WR+, (WR+ > l+ N1)
+add process p p > WR-, (WR- > l- N1)
+
+Off shell WR:
+(use /X to exclude X)
+add process p p > l+ N1 
+add process p p > l- N1 
+
+off shell explicite KS full:
+generate p p > WR+, (WR+ > l+ N1, N1 > l j j)
+add process p p > WR-, (WR- > l- N1, N1 > l j j)
+
+output /storage/alexanum/WORKBENCH/runs/KSDY_WR
