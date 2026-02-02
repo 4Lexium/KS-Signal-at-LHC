@@ -4,7 +4,7 @@
   - Merged Region
   - Invisible Region
 
-> Requirements:
+> Requirements
   - Python
   - MadGraph5
   - Pythia8
