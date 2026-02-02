@@ -1,2 +1,3 @@
 # KS Signal at LHC
-Sensitivity Analysis for the KS signal at LHC to verify LRSM and HNL
+Sensitivity Analysis for the KS signal at LHC
+Phenomenological model of HNLs in the LRSM
