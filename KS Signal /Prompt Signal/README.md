@@ -22,6 +22,8 @@ Analysis:
 
 > read_HNL_decay_CS.C (reads the DY_CS x BR(HNL > ljj) as function of mN, mWR and tb)
 
+> KS_ApplyKinematicCuts.C (applies momentum and eta cuts to final state lljj, Cut efficiency, and shuffling with inv. mass reconstruction)
+
 Other:
 > gnerate_KS.txt (extra info about generating processess)
 
