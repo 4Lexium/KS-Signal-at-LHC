@@ -10,9 +10,9 @@
 >  - UFO: mlrsm-1.1/UFOs/mlrsm-4f
 
 > Requirements
->  - Python
->  - MadGraph5
->  - Pythia8
->  - Delphes
->  - ROOT
->  - GNU Paralell
+>  - Python 3.9.12
+>  - MadGraph 2.9.25 - 3.7
+>  - Pythia8 8.3.17
+>  - Delphes 3
+>  - ROOT 6.26/04
+>  - GNU Paralell 0260222
