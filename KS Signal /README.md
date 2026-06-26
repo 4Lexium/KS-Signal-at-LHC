@@ -15,4 +15,4 @@
 >  - Pythia8 8.3.17
 >  - Delphes 3
 >  - ROOT 6.26/04
->  - GNU Paralell 0260222
+>  - GNU Paralell 20260222
