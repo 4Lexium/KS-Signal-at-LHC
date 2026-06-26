@@ -1,7 +1,7 @@
 multiplicity_scan.py
 > reconstruction analysis of multiplicities (#jets, #leptons) and testing the general Preselection procedure (validation with dijet-system)
 
-Comparion of Signal Models, Background MC and data from 2022 period J
+Comparison of Signal Models, Background MC and data from 2022 period J
 >
 > see Samples_INFO for infomation on samples
 >
