@@ -1,4 +1,10 @@
 # KS Signal at LHC
-Sensitivity Analysis for the KS signal at LHC
 
-Phenomenological model of HNLs in the LRSM
+Phenomenological modeling of HNLs in the LRSM
+
+Keung-Senjanović dijet-dilepton variant including HNL producion and decay
+pp > l1 (N > l2 (W > jj))
+
+Signifiance Analysis for the KS signal at LHC
+
+
