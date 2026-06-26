@@ -13,6 +13,6 @@ To run any of the C macro:
 > > root -l -q -b /home/XXX.C
 > >
 
-Extractubg the Metadata from DAOD ROOT files:
+Extracting the Metadata from DAOD ROOT files:
 
 > /Metadata
