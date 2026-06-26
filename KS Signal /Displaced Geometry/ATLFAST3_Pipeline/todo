@@ -1,0 +1,78 @@
+Navigate inside ATLAS_jobdir 
+Paste inside the terminal: 
+    export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+    alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
+    setupATLAS -c el9
+(inside Apptrainer):
+    asetup AthGeneration,23.6.63
+    which Gen_tf.py
+(go inside /temp and use ../ to indicate level-up-folders)
+    Gen_tf.py --ecmEnergy="13600" --AMITag="e8599" --randomSeed=83 --jobConfig=../jobConfiguration/ --outputEVNTFile=../ROOT_files/KS_LLP_MN70_MWR5000.EVNT.pool.root
+('exit' Apptrainer)
+
+Convert EVNT -> TRUTH3:  (OR TO RUN SIG_vs_BKG)
+    export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase  
+    alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh' 
+    setupATLAS -c centos7 
+    asetup Athena,24.0.11 
+    which Derivation_tf.py
+(check with ls for EVNTFILE)
+Derivation_tf.py --CA --inputEVNTFile=../ROOT_files/KS_LLP_MN70_MWR5000.EVNT.pool.root --outputDAODFile KS_LLP_MN70_MWR5000.EVNT.pool.root --formats TRUTH3  
+
+(move it manually inside the ROOT_files folder)
+
+Run EVENT_analysis:
+(Navigate inside ATLAS_jobdir)
+    export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+    alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
+    setupATLAS -c el9
+    asetup AthGeneration,23.6.63
+    which athena.py
+    (move to temp)
+    athena.py /srv/EVENT_analysis/dump_HNL_vertices.py
+
+
+(This is recomene to do in /storage because of disk storage!)
+Convert EVNT -> HITS (simulation + digitization)
+    export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase  
+    alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh' 
+    setupATLAS -c centos7
+    asetup --platform=x86_64-centos7-gcc11-opt Athena,23.0.36
+    export ATHENA_PROC_NUMBER=8
+    export ATHENA_CORE_NUMBER=8
+    which Sim_tf.py
+    (move to temp)
+    Sim_tf.py --inputEVNTFile="/storage/alexanum/DAOD_LLP_WORKFLOW/ROOT_files/KS_LLP_MN70_MWR5000.EVNT.pool.root" --maxEvents=10000 --multithreaded="True" --postInclude "default:PyJobTransforms.UseFrontier" --preExec "EVNTtoHITS:flags.Sim.FastCalo.ParamsInputFilename=\"FastCaloSim/MC23/TFCSparam_dev_Hybrid_Ha_v5_all_baryons_0_500.root\"" --preInclude "EVNTtoHITS:Campaigns.MC23aSimulationMultipleIoV" --skipEvents="0" --randomSeed="3" --conditionsTag "default:OFLCOND-MC21-SDR-RUN3-07" --geometryVersion="default:ATLAS-R3S-2021-03-02-00" --runNumber="150002" --AMITag="a910" --CA "all:True" --jobNumber="3" --outputHITSFile="/storage/alexanum/DAOD_LLP_WORKFLOW/ROOT_files/HITSfile_HNL_mc23_13p6TeV.MGPy8EG_LRSM_WR_HNL_5000_70_2L2J_MadSpin.HITS.pool.root" --simulator="ATLFAST3MT_QS"
+
+Convert HITS -> AOD (reconstruction)
+    export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase  
+    alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh' 
+    setupATLAS -c centos7
+    asetup --platform=x86_64-centos7-gcc11-opt Athena,23.0.20
+    export ATHENA_PROC_NUMBER=8
+    export ATHENA_CORE_NUMBER=8
+    which Reco_tf.py
+    Reco_tf.py --inputHITSFile="/storage/alexanum/DAOD_LLP_WORKFLOW/ROOT_files/HITSfile_HNL_mc23_13p6TeV.MGPy8EG_LRSM_WR_HNL_5000_70_2L2J_MadSpin.HITS.pool.root" --maxEvents=10000 --deleteIntermediateOutputfiles="True" --multithreaded="True" --postInclude "default:PyJobTransforms.UseFrontier" --preInclude "all:Campaigns.MC23a" "RDOtoRDOTrigger:TrigInDetConfig/IDTrig_MC23a_preInclude.py" --skipEvents="0" --autoConfiguration="everything" --conditionsTag "default:OFLCOND-MC23-SDR-RUN3-02" --geometryVersion="default:ATLAS-R3S-2021-03-02-00" --runNumber="150002" --digiSeedOffset1="1" --digiSeedOffset2="1"  --AMITag="r15540" --CA "default:True" "RDOtoRDOTrigger:False" --steering  "doRDO_TRIG" "doTRIGtoALL" --outputAODFile="/storage/alexanum/DAOD_LLP_WORKFLOW/ROOT_files/AODfiles_HNL_mc23_13p6TeV.MGPy8EG_LRSM_WR_HNL_5000_70_2L2J_MadSpin.AOD.pool.root"
+
+Convert AOD -> DAOD_LLP1 (derivation)
+    export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase  
+    alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh' 
+    setupATLAS -c el9
+    asetup --platform=x86_64-el9-gcc14-opt Athena,25.0.42                                                                                                                                                           
+    export ATHENA_PROC_NUMBER=8                                                                                                                                                                                     
+    export ATHENA_CORE_NUMBER=8  
+    which Derivation_tf.py 
+    Derivation_tf.py --inputAODFile="/storage/alexanum/DAOD_LLP_WORKFLOW/ROOT_files/AODfiles_HNL_mc23_13p6TeV.MGPy8EG_LRSM_WR_HNL_5000_70_2L2J_MadSpin.AOD.pool.root" --formats LLP1 --outputDAODFile DAOD_LLP1.mc23_13p6TeV.MGPy8EG_LRSM_WR_HNL_5000_70_2L2J_MadSpin.DAOD_LLP1.pool.root --AMITag p7042 --preExec "all:flags.Derivation.LLP.saveFullTruth=True; flags.Derivation.LLP.doTrackSystematics=True;" --CA "all:True"
+
+
+!!! IMPORTANT !!!
+Highly recommend to do the setups inside ATLAS_jobdir
+    pwd: /srv  
+    ls: EVENT_analysis  ROOT_files  jobConfiguration  temp  todo
+Before excuting Gen_tf or Derivation_tf move inside temp and use abs path: /srv/... or ../ to acess ROOT files or jobConfiguration
+For heavier conversions (aka HITS) srv will be overfilled. Open apptrainer somwhere in /storage and use /storage/... instead of /srv/...
+Note any Derivation.py expects output: Name.root, not path! and no "= ..."
+
+
+
+
