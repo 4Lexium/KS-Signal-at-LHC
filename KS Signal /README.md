@@ -16,4 +16,4 @@
 >  - Delphes 3
 >  - ROOT 6.26/04
 >  - GNU Paralell 20260222
->  - acess: https://zenodo.org/records/18735643
+  - acess: https://zenodo.org/records/18735643
