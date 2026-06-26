@@ -9,9 +9,9 @@ $$pp \rightarrow W_R^{(*)} \rightarrow l_1 (N \rightarrow l_2 (W \rightarrow jj)
 Generation of Event- Kinematic and Topology (incl. angular distr. and decay lenght) for different paramterizations:
   > lepton-mixing matrices (PMNS-R)
   >
-  > gauge-mixing strenght (WL<->WR)
+  > gauge-mixing strenght ($W_R \leftrightarrow W_L$)
   > 
-  > mass space (mN, mWR)
+  > mass space ($m_N, m_{W_R}$)
 
 Reconstruction methods using ATLAS-AtlFast3 DAOD(DAOD_LLP) output format  
 
