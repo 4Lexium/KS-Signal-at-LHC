@@ -22,6 +22,8 @@ Convert EVNT -> TRUTH3:  (OR TO RUN SIG_vs_BKG)
 >
 > (move it manually inside the ROOT_files folder)
 
+Then wxewcute: [ python dump_DAOD_HNL_DV.py ]
+
 Run EVENT_analysis:
 > (Navigate inside ATLAS_jobdir)
 > > export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
