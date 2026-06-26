@@ -1,6 +1,6 @@
 # KS Signal at LHC
 
-As part of the Master's project conducted in spring-summer 2026 at the University of Oslo with the ATLAS colaboration
+As part of the Master's project conducted during spring-summer 2026 at the University of Oslo with the ATLAS colaboration
 
 Phenomenological modeling of HNLs in the LRSM
 
