@@ -1,3 +1,9 @@
-"KS_DV": Madgraph production pp > l N (HNL=stable). Pythia handles decay of HNL to jjl (and j hadrnoziation) based on SLHA decay tables in params_card.dat
-
-"KS_delphes": Madgraph generates full (chained) pp > l Nm N > l j j and computes 2->4 matrix elements. Pythia reads lhe file and applied DV (to HNL intermediate particle) and hadronizes final state
+Procedural for Simulating KS-event topology inclduing displacement.
+Pythia+Delphes
+> Standard Procedure for Running Pythia/Delphes for prompt signals 
+Manual_HEPMC3
+> Variant where Pythia8 and MadGraph are run separately
+Manual_LLP analysis
+> HNL Displacment derived from the lhe MadGprah output, using lab-frame kinematics to determine the decay-lenght
+ATLFAST3_Pipleine
+> ATLAS-standard generation->simulation pipeline producing DAOD/DAOD_LLP outputs used later for reconstruction
