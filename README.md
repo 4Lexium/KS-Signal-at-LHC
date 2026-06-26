@@ -3,7 +3,8 @@
 Phenomenological modeling of HNLs in the LRSM
 
 Keung-Senjanović dijet-dilepton variant including HNL producion and decay
-pp > l1 (N > l2 (W > jj))
+
+pp > WR(*) > l1 (N > l2 (W > jj))     W = WR or WL (by gauge-mixing)
 
 Signifiance Analysis for the KS signal at LHC
 
