@@ -1,3 +1,7 @@
+Analysis of HNL displacement based on only truth-level branches (DAOD output) 
+
+Cretead Figures in /ExampleFigs
+
 Convert EVNT -> TRUTH3:  (OR TO RUN SIG_vs_BKG)
 
 > > export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
