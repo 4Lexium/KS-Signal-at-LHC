@@ -3,3 +3,5 @@ HNL displacement analysis using only the lhe output with lab-frame kinematics ge
 Nominal Displacement calculated using (HNL_witdth_eq.png) is plotted as function of ($m_N, m_{W_R}$) and compared to SM neutral states
 
 Effective Displacement: applying boost-factor (using generated MG-kinematics) on top of the nominal displacement i.e. $L_N = c \tau_N \times \beta_N \gamma_N$
+
+The C scripts produce many different types of plots, where some were discared and remain in draft-format. The best visualization plots are collected for demonstration in /ExampleFigs
