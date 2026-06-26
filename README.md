@@ -2,7 +2,7 @@
 
 As part of the Master's project conducted during spring-summer 2026 at the University of Oslo with the ATLAS colaboration
 
-Phenomenological modeling of HNLs in the LRSM
+Topic: Phenomenological modeling of HNLs in the LRSM
 
 Keung-Senjanović dijet-dilepton variant including HNL producion and decay
 
