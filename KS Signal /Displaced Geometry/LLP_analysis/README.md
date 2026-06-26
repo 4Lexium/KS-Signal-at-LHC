@@ -4,9 +4,9 @@
 > 
 >    alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
 > 
->    setupATLAS -c centos7
+> >   setupATLAS -c centos7
 > 
->    asetup Athena,24.0.11
+> >   asetup Athena,24.0.11
 > 
 >    which Derivation_tf.py
 > 
