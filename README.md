@@ -8,8 +8,11 @@ pp > WR(*) > l1 (N > l2 (W > jj))   | W = WR or WL (by gauge-mixing), j = jets, 
 
 Simulation of Event Kinematic and Topology (incl. angular distr. and decay lenght) for different paramterizations:
   > lepton-mixinbg matrices (PMNS-R)
+  >
   > gauge-mixing strenght
+  > 
   > mass space (mN, mWR)
+
 Signifiance Analysis for the KS signal at LHC
 
 
