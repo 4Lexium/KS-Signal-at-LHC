@@ -15,8 +15,9 @@
 
 > Requirements
 >  - Python 3.9.12
->  - MadGraph 2.9.25 - 3.7
->  - Pythia8 8.3.17
+>  - MadGraph 2.9.25 - 3.7 (acessible: http://madgraph.phys.ucl.ac.be/cgi-bin/Register/download.cgi)
+>  - Pythia8 8.3.17 
 >  - Delphes 3
+>  - (Pythia and Delphes can be installed inside MadGraph directory /HEPTools, then set correct path using bin> display options)
 >  - ROOT 6.26/04
 >  - GNU Paralell 20260222 (acess: https://zenodo.org/records/18735643)
