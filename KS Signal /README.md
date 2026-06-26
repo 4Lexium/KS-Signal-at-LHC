@@ -1,8 +1,7 @@
-> KS Signal
+> KS Signal Topology
 >  - Prompt Region
 >  - Displaced Region
 >  - Merged Region
->  - Invisible Region
 
 > Model
 >  - Complete Left-Right symmetric model
