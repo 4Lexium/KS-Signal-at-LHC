@@ -9,7 +9,7 @@ pp > WR(*) > l1 (N > l2 (W > jj))   | W = WR or WL (by gauge-mixing), j = jets, 
 Generation of Event- Kinematic and Topology (incl. angular distr. and decay lenght) for different paramterizations:
   > lepton-mixing matrices (PMNS-R)
   >
-  > gauge-mixing strenght
+  > gauge-mixing strenght (WL<->WR)
   > 
   > mass space (mN, mWR)
 
