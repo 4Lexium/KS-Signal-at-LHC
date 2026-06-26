@@ -1,3 +1,10 @@
+Reco_LLP reads truth-level BSM branches and compares to reconstructed track-DCA values
+
+Comparison with BKG using the DCA method
+
+Modified variants of DCA using PV coordinate correction, and SV instead of perigree. 
+
+
 Execute each python script: [ python XXX.py ] in enviroment that has: Numnpy, awkward, math, ROOT, uproot.
 F.ex. using VENV: 
 
