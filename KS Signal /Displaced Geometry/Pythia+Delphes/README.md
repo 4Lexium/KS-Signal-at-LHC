@@ -4,4 +4,4 @@
 > 
 > The C macro analyses the root file produced by Delphes. Make sure to properly configure the enviroment by loading libDelphes (see details at the top of C code)
 >
-> The Plotting script will create the vertex coordinate distribution (.png)
+> The Visualization script will create the vertex coordinate scatter plot (.png)
