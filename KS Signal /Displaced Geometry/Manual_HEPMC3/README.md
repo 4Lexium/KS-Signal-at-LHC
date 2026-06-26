@@ -6,7 +6,7 @@ Imporant Note: *generate_KSDV-mg5 has updated N1 > n1 and WR > wr*
 
 Run Pythia 8.3.17 separately using lhe2hepmc3.cc where Pythia commands can be defined in the macro. 
 
-The cc macro is called using the run_HNLDV.sh script which compiles, passes lhe input and runs the cc macros.
+The cc macro is called using the run_HNLDV.sh script which compiles, passes lhe input and runs the scripts.
 
 The produced events.hepmc3 can be directly analysef for HNL-masked vertices using scal_HNLDV.cc which works DIRECTLY on HEPMC3
 
