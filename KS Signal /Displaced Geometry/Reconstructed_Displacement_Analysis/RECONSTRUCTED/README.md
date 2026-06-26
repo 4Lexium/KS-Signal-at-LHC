@@ -4,10 +4,13 @@ dump_Rec_LLP
 >
 > plots comprison to analytical Poisson distribution and correlation with transverse momenta
 
-Comparison with BKG using the DCA method
+scanDV_testBKG
+>
+> Comparing the DCA method for displaced signal model and background MCs 
 
-Modified variants of DCA using PV coordinate correction, and SV instead of perigree. 
-
+scanDV_testSV
+>
+> testing several DCA modifications: using PV coordinate correction, and SV instead of perigree. 
 
 Execute each python script: [ python XXX.py ] in enviroment that has: Numnpy, awkward, math, ROOT, uproot.
 F.ex. using VENV: 
