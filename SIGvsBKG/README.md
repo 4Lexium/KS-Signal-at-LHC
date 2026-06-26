@@ -11,3 +11,8 @@ To run any of the C macro:
 > > asetup Athena,24.0.11
 > 
 > > root -l -q -b /home/XXX.C
+> >
+
+Extractubg the Metadata from DAOD ROOT files:
+
+> /Metadata
