@@ -1,4 +1,4 @@
-> Convert EVNT -> TRUTH3:  (OR TO RUN SIG_vs_BKG)
+Convert EVNT -> TRUTH3:  (OR TO RUN SIG_vs_BKG)
 > 
 >  > export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 > 
@@ -16,7 +16,7 @@
 >
 > (move it manually inside the ROOT_files folder)
 >
-> Run EVENT_analysis:
+Run EVENT_analysis:
 > 
 > (Navigate inside ATLAS_jobdir)
 >
