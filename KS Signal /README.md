@@ -3,6 +3,11 @@
 >  - Displaced Region
 >  - Merged Region
 
+> Analysis Pipeline
+>  - HNL production (Drell-Yan): generated with MadGraph
+>  - HNL decay (prompt/displaced): MadGprah+Pythia+Delphes
+>  - Combined: generation with MadGraph+Pythia -> simulation with Altfast3 (DAOD/DAOD_LLP)
+
 > Model
 >  - Complete Left-Right symmetric model
 >  - acess: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/LRSM_NLO#no1
