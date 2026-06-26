@@ -1,4 +1,8 @@
-Reco_LLP reads truth-level BSM branches and compares to reconstructed track-DCA values
+dump_Rec_LLP
+>
+> reads truth-level BSM branches and compares to reconstructed track-DCA values
+>
+> plots comprison to analytical Poisson distribution and correlation with transverse momenta
 
 Comparison with BKG using the DCA method
 
