@@ -4,7 +4,14 @@ Phenomenological modeling of HNLs in the LRSM
 
 Keung-Senjanović dijet-dilepton variant including HNL producion and decay
 
-$$pp > WR(*) > l1 (N > l2 (W > jj)) $$  | W = WR or WL (by gauge-mixing), j = jets, N = N1
+\begin{equation}
+\begin{aligned}
+    &\text{KS}: pp\rightarrow W_R^{(*)} \rightarrow l_1 \big(N\rightarrow l_2 (W^*_R\rightarrow q\bar q') \big), \quad SS:l^\pm_1,l^\pm_2, OS: l^\pm_1,l^\mp_2 \\
+    &\hspace{10.8em}\tikz[baseline=-0.6ex]\draw[->] (0,0.3) -- (0,0) -- (0.5,0);l_2 (W_L\rightarrow q\bar q') \quad |\;\xi_W \neq 0
+    \end{aligned}
+\end{equation}
+
+$$pp \rightarrow W_R^{(*)} \rightarrow l_1 (N \rightarr l2 (W > jj)) $$  | W = WR or WL (by gauge-mixing), j = jets, N = N1
 
 Generation of Event- Kinematic and Topology (incl. angular distr. and decay lenght) for different paramterizations:
   > lepton-mixing matrices (PMNS-R)
