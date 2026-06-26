@@ -1,6 +1,6 @@
 > Convert EVNT -> TRUTH3:  (OR TO RUN SIG_vs_BKG)
 > 
->  -- export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+>  > export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 > 
 >  - alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
 > 
