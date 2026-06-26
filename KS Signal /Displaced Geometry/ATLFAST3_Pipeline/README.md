@@ -4,6 +4,6 @@ Create a directory as shown in directory.png. To avoid spam-files call all execu
 
 The procedure for lhe > hepmc > EVNT > HITS > AOD > DAOD_LLP is better explained in detail in (todo)
 
-(Make sure the files are called correctly i.e. if /jobconfig is on the same level as /temp use ../define_KS.py when executing from inside /temp. We also recomend when entering the /srv after launching an ATLAS platform to save output files (especcially HITS and AOD) in /storage or some other location with large disk space. Finally the last step using Derivation_tf.py to go from AOD->DAOD_LLP (or f.ex. EVNT->TRUTH3) you MUST GIVE IT THE FILE PROC. IT DOES NOT UNDERSTAND RELATIVE PATHS. Move it manually to destred destination later.
+(Make sure the files are called correctly i.e. if /jobconfig is on the same level as /temp use ../define_KS.py when executing from inside /temp. We also recomend when entering the /srv after launching an ATLAS platform to save output files (especcially HITS and AOD) in /storage or some other location with large disk space. Finally the last step using Derivation_tf.py to go from AOD->DAOD_LLP (or f.ex. EVNT->TRUTH3) you MUST GIVE IT THE FILE PROC. IT DOES NOT UNDERSTAND RELATIVE PATHS. Move it manually to desired destination later.
 
 
