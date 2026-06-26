@@ -1,6 +1,6 @@
-dump_DAOD_HNLDV: analysis of HNL displacement based on only truth-level branches (DAOD output). Cretead Figures in /ExampleFigs
+dump_DAOD_HNL_DV: analysis of HNL displacement based on only truth-level branches (DAOD output). Cretead Figures in /ExampleFigs
 
-HNL_DV: analysis of HNL vertex distance extracted straight from the EVNT file.
+dump_HNL_vertices: analysis of HNL displacement based on extracted vertices (straight from EVNT output)
 
 
 
