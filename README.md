@@ -13,6 +13,8 @@ Generation of Event- Kinematic and Topology (incl. angular distr. and decay leng
   > 
   > mass space (mN, mWR)
 
-Signifiance Analysis for the KS signal at LHC
+Reconstruction methods using ATLAS-AtlFast3 DAOD(DAOD_LLP) output format  
+
+Preliminary Signifiance Analysis for the KS signal at LHC using background MC and ATLAs data.
 
 
