@@ -1,14 +1,14 @@
 > Convert EVNT -> TRUTH3:  (OR TO RUN SIG_vs_BKG)
 > 
->    export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+>  - export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 > 
->    alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
+>  - alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
 > 
-> >   setupATLAS -c centos7
+>  - setupATLAS -c centos7
 > 
-> >   asetup Athena,24.0.11
+>  - asetup Athena,24.0.11
 > 
->    which Derivation_tf.py
+>  - which Derivation_tf.py
 > 
 >(check with ls for EVNTFILE)
 > 
