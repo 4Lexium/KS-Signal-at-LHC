@@ -1,5 +1,7 @@
 # KS Signal at LHC
 
+As part of the Master's project at the University of Oslo with the ATLAS colaboration
+
 Phenomenological modeling of HNLs in the LRSM
 
 Keung-Senjanović dijet-dilepton variant including HNL producion and decay
