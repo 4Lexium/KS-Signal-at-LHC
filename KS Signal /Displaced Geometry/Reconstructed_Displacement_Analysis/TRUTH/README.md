@@ -22,8 +22,8 @@ Convert EVNT -> TRUTH3:  (OR TO RUN SIG_vs_BKG)
 >
 > (move it manually inside the ROOT_files folder)
 
-Then execute: [ python dump_DAOD_HNL_DV.py ] (in enviroment that has: Numnpy, awkward, math, ROOT, uproot.
-F.ex. using VENV 
+Then execute: [ python dump_DAOD_HNL_DV.py ] in enviroment that has: Numnpy, awkward, math, ROOT, uproot.
+F.ex. using VENV: 
 
 > python3 -m venv $HOME/venvs/uproot_env
 > 
